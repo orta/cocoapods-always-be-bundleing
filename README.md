@@ -8,3 +8,14 @@ The alternative is to the use [the CocoaPods.app](http://cocoapods.org/app).
 
     $ gem install cocoapods-always-be-bundleing
 
+
+
+### Alternative
+
+If you want to make it specific to a Podfile, add this to the top of your Podfile:
+
+```ruby 
+  "Please run `pod install` with bundle exec instead." unless defined?(Bundler)
+```
+
+No need for the plugin, this is more for keeping it consistent across all Podfiles.
