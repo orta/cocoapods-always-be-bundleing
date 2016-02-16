@@ -1,1 +1,1 @@
-require 'cocoapods-always-be-bundleing/command'
+abort "Please run `pod install` with bundle exec instead." unless defined?(Bundler)

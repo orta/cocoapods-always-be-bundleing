@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsAlwaysBeBundleing::VERSION
   spec.authors       = ['Orta Therox']
   spec.email         = ['orta.therox@gmail.com']
-  spec.description   = %q{A short description of cocoapods-always-be-bundleing.}
-  spec.summary       = %q{A longer description of cocoapods-always-be-bundleing.}
-  spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-always-be-bundleing'
+  spec.description   = "Don't allow usage of just `pod install` - require that you use it through `bundle exec pod install`"
+  spec.summary       = "Doing a simple `pod install` will use the latest version of CocoaPods - this plugin requires that you use it through `bundle exec pod install` instead, ensuring you always have the right versions from the Gemfile.lock."
+  spec.homepage      = 'https://github.com/orta/cocoapods-always-be-bundleing'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
